@@ -23,7 +23,7 @@
 
 ## 📂 项目结构
  
-"""
+'''
 my-project/
 ├── backend/              # Flask 后端模块
 │   ├── app.py            # 后端入口文件，提供 API 接口
@@ -38,7 +38,7 @@ my-project/
 ├── public/               # 前端静态资源文件夹
 ├── package.json          # 前端依赖配置
 └── README.md             # 项目说明文档
-"""
+'''
 ---
 
 ## 🚀 快速启动
