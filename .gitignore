@@ -1,4 +1,13 @@
+# 前端相关
 node_modules/
+build/
 .env
-*.h5
+.env.local
+
+# Python相关
 __pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
