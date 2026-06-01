@@ -3,6 +3,7 @@ from flask_cors import CORS
 from predict_service import predict_image  # 直接调用你写好的预测函数
 from PIL import Image
 import io
+import os
 
 app = Flask(__name__)
 CORS(app)  # 允许跨域请求，方便前后端联调
@@ -52,5 +53,5 @@ def predict():
 
 # -------------------------- 启动后端服务 --------------------------
 if __name__ == "__main__":
-    # 端口号固定为8000，和你原来的配置一致
+    port = int(os.environ.get("PORT", 8000))  # 读取 Render 分配的端口，默认8000
     app.run(host="0.0.0.0", port=port, debug=False)
